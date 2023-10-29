@@ -1,9 +1,13 @@
 import React from 'react';
+import logo from "../../../assets/logo.png"
 
 const Header = () => {
     return (
         <div>
-            <h2>header</h2>
+            {/* Replace this image and content with my own */}
+            <img src={logo} alt="Application logo" />
+            <h4>Journalism Without Fear or Favour</h4>
+            
         </div>
     );
 };
