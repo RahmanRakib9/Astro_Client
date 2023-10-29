@@ -1,7 +1,8 @@
 import React from 'react';
 import logo from "../../../assets/logo.png"
 import moment from 'moment';
-import { Container, Button, Nav, Navbar, InputGroup, Form } from 'react-bootstrap';
+import { Container, InputGroup, Form } from 'react-bootstrap';
+import { FaSearch } from "react-icons/fa";
 
 const Header = () => {
     return (
@@ -20,9 +21,8 @@ const Header = () => {
             {/* Bottom header section */}
             <section>
                 <InputGroup className="mb-3">
-                    <InputGroup.Text></InputGroup.Text>
-                    <Form.Control aria-label="Amount (to the nearest dollar)" />
-                    {/* <InputGroup.Text>.00</InputGroup.Text> */}
+                    <Form.Control placeholder='Search here' />
+                    <InputGroup.Text><FaSearch /></InputGroup.Text>
                 </InputGroup>
             </section>
         </Container>
