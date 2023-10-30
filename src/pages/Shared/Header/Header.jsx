@@ -3,6 +3,7 @@ import logo from "../../../assets/logo.png"
 import moment from 'moment';
 import { Container, InputGroup, Form } from 'react-bootstrap';
 import { FaSearch } from "react-icons/fa";
+import Navigationbar from '../Navigationbar/Navigationbar';
 
 const Header = () => {
     return (
@@ -21,10 +22,13 @@ const Header = () => {
             {/* Bottom header section */}
             <section>
                 <InputGroup className="mb-3">
-                    <Form.Control placeholder='Search here..' className='text-center' />
+                    <Form.Control placeholder='Please enter at least 3 characters to search...' className='text-center' />
                     <InputGroup.Text><FaSearch /></InputGroup.Text>
                 </InputGroup>
             </section>
+
+            {/* Shared navigationbar */}
+            <Navigationbar></Navigationbar>
         </Container>
     );
 };
