@@ -21,7 +21,7 @@ const Header = () => {
             {/* Bottom header section */}
             <section>
                 <InputGroup className="mb-3">
-                    <Form.Control placeholder='Search here' />
+                    <Form.Control placeholder='Search here..' className='text-center' />
                     <InputGroup.Text><FaSearch /></InputGroup.Text>
                 </InputGroup>
             </section>
