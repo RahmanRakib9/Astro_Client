@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, ListGroup } from 'react-bootstrap';
-import { FaGoogle, FaGithub, FaFacebook, FaInstagram, FaTwitter, FaGithubAlt, FaLinkedin } from 'react-icons/fa';
+import { FaGoogle, FaGithub, FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import "./RightNav.css"
 

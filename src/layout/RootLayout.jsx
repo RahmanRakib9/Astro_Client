@@ -5,6 +5,7 @@ import { Outlet } from 'react-router-dom';
 import { Col, Container, Row } from 'react-bootstrap';
 import LeftNav from '../pages/Shared/LeftNav/LeftNav';
 import RightNav from '../pages/Shared/RightNav/RightNav';
+import RootNewsFeed from '../pages/Home/NewsFeed/RootNewsFeed/RootNewsFeed';
 
 const RootLayout = () => {
     return (
@@ -16,7 +17,8 @@ const RootLayout = () => {
                         <LeftNav></LeftNav>
                     </Col>
                     <Col lg={6}>
-                        <Outlet></Outlet>
+                        {/* <Outlet></Outlet> */}
+                        <RootNewsFeed></RootNewsFeed>
                     </Col>
                     <Col lg={3}>
                         <RightNav></RightNav>
