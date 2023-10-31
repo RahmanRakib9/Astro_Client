@@ -1,7 +1,12 @@
 import React from 'react';
 import { Button, Container, Form } from 'react-bootstrap';
+import useSetTitle from '../../customHooks/SetTitle/UseSetTitle';
 
 const SignUp = () => {
+
+    //display dynamic title
+    useSetTitle("Register");
+
     return (
         <Container>
             <section>
