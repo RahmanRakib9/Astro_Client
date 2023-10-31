@@ -3,8 +3,12 @@ import { Button, Card, Image } from 'react-bootstrap';
 import { FaEye, FaRegBookmark, FaShareAlt } from "react-icons/fa"
 import moment from 'moment/moment';
 import Rating from 'react-rating';
+import useSetTitle from '../../../../customHooks/SetTitle/UseSetTitle';
 
 const RootNewsFeed = () => {
+    //display dynamic title
+    useSetTitle("Home");
+
     return (
         <div>
             <Card className='mb-4'>
