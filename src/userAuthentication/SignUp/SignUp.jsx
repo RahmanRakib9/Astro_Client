@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Button, Container, Form } from 'react-bootstrap';
 import useSetTitle from '../../customHooks/SetTitle/UseSetTitle';
+import { UserAuthenticationContext } from '../../provider/UserAuthenticationProvider/UserAuthenticationProvider';
 
 const SignUp = () => {
+    const { handlePasswordSignUp } = useContext(UserAuthenticationContext);
 
     //display dynamic title
     useSetTitle("Register");
@@ -16,6 +18,14 @@ const SignUp = () => {
         const userName = event.target.name.value;
         const userEmail = event.target.email.value;
         const userPassword = event.target.password.value;
+
+        handlePasswordSignUp(userEmail, userPassword)
+            .then((res) => {
+                console.log(res);
+            })
+            .catch((err) => {
+                console.log(err);
+            })
 
         // console.log(userName);
 
