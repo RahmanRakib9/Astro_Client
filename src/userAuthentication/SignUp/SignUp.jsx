@@ -4,7 +4,7 @@ import useSetTitle from '../../customHooks/SetTitle/UseSetTitle';
 import { UserAuthenticationContext } from '../../provider/UserAuthenticationProvider/UserAuthenticationProvider';
 
 const SignUp = () => {
-    const { handlePasswordSignUp } = useContext(UserAuthenticationContext);
+    const { handlePasswordSignUp } = useContext(UserAuthenticationContext); //use global context
 
     //display dynamic title
     useSetTitle("Register");
