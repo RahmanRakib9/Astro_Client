@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import  { useContext } from 'react';
 import { Button, Container, Form } from 'react-bootstrap';
 import useSetTitle from '../../customHooks/SetTitle/UseSetTitle';
 import { UserAuthenticationContext } from '../../provider/UserAuthenticationProvider/UserAuthenticationProvider';
@@ -15,7 +15,7 @@ const SignUp = () => {
 
         console.log("clicked");
 
-        const userName = event.target.name.value;
+        // const userName = event.target.name.value;
         const userEmail = event.target.email.value;
         const userPassword = event.target.password.value;
 
